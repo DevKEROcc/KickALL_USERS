@@ -14,7 +14,7 @@ logging.getLogger("pyrogram").setLevel(logging.WARNING)
 
 API_ID = int(os.getenv("API_ID","29879953"))
 API_HASH = os.getenv("API_HASH","e099c70412e3263deb55cbd586e22a88")
-BOT_TOKEN = os.getenv("BOT_TOKEN","")
+BOT_TOKEN = os.getenv("BOT_TOKEN","حط التوكن بتاعك")
 
 uvloop.install()
 
@@ -30,10 +30,9 @@ async def start_bot(cl: Client, m: Message):
                               url=f"tg://resolve?domain={cl.me.username}&startgroup=&admin=manage_chat+restrict_members")],
         [InlineKeyboardButton(text="➕ اضافه الي قناه ",
                               url=f"tg://resolve?domain={cl.me.username}&startchannel&admin=change_info+restrict_members+post_messages")],
-        [InlineKeyboardButton(text="📦 Public Repository", url="https://github.com/DevKEROcc/KickALL_USERS")]
     ])
     await m.reply(
-        f"Hello {m.from_user.mention}  انا البوت التفليش بطير كل الاعضاء في الجروبات او القنوات  من تطوير < @KERO_7X \ @Ahmed_5x >. للمساعده اكتب /help",
+        f"Hello {m.from_user.mention}  انا البوت التفليش بطير كل الاعضاء في الجروبات او القنوات  من تطوير < @AT_W2 \ @AT_W3 >. للمساعده اكتب /help",
         reply_markup=keyboard)
 
 
